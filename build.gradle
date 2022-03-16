@@ -16,6 +16,7 @@ apply plugin:"idea"
 apply plugin:"org.grails.grails-plugin"
 apply plugin:"asset-pipeline"
 apply plugin:"org.grails.grails-gsp"
+apply plugin:"org.grails.internal.grails-plugin-publish"
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
@@ -85,4 +86,16 @@ bootJar.enabled = false
 
 assets {
     packagePlugin = true
+}
+
+grailsPublish {
+    user = 'rainboyan'
+    key = 'grails-new-plugin-demo'
+    githubSlug = 'rainboyan/grails-new-plugin-demo'
+    license {
+        name = 'Apache-2.0'
+    }
+    title = "Grails new plugin demo"
+    desc = "My plugin description"
+    developers = [rainboyan:"Michael Yan"]
 }
