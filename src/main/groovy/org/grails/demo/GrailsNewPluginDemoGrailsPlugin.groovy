@@ -13,10 +13,10 @@ class GrailsNewPluginDemoGrailsPlugin extends Plugin {
 
     // TODO Fill in these fields
     def title = "Grails New Plugin Demo" // Headline display name of the plugin
-    def author = "Your name"
-    def authorEmail = ""
+    def author = "Michael Yan"
+    def authorEmail = "rain@rainboyan.com"
     def description = '''\
-Brief summary/description of the plugin.
+Grails plugin demo publish with internal gradle plugin.
 '''
     def profiles = ['web']
 
@@ -26,19 +26,19 @@ Brief summary/description of the plugin.
     // Extra (optional) plugin metadata
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
+    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
 
     // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
+    def developers = [ [id: "rainboyan", name: "Michael Yan", email: "rain@rainboyan.com" ]]
 
     // Location of the plugin's issue tracker.
-//    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
+    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/NEW-PLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+    def scm = [ url: "http://github.com/grails-plugins/grails-new-plugin" ]
 
     Closure doWithSpring() { {->
             // TODO Implement runtime spring config (optional)
